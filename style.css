@@ -16,7 +16,7 @@
       rgba(0, 0, 0, 0.788),
       rgba(0, 0, 0, 0.123)
     ),
-    url("background.jpg");
+    url("background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
