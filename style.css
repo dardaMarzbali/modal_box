@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.788),
+      rgba(0, 0, 0, 0.123)
+    ),
+    url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.192);
+  backdrop-filter: blur(3px);
+  border: 1px solid white;
+  height: 9%;
+  width: 15%;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.popup-main {
+  position: fixed;
+  top: 100%;
+  left: 0%;
+  height: 100dvh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.582);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 1s;
+}
+
+.popup-window {
+  height: 70dvh;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.336);
+  backdrop-filter: blur(2px);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39)
+}
+
+.fa-circle-xmark {
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.1rem;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.fa-circle-xmark:hover {
+  color: red;
+}
+
+h2 {
+  color: white;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  font-size: 2rem;
+}
+p {
+  color: white;
+  position: absolute;
+  top: 7rem;
+  left: 3rem;
+  font-size: 1rem;
+  width: 80%;
+  text-align: justify;
+}
